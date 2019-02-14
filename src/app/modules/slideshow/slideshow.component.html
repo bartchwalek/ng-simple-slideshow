@@ -29,7 +29,7 @@
     <div class="loader"
          *ngIf="!slide?.loaded"></div>
     <div *ngIf="showCaptions && slide?.image?.caption"
-         class="caption"
+         [className]="captionVPosition == 'bottom' ? 'caption' : 'captiontop'"
          [ngStyle]="{
            'color': captionColor,
            'background-color': captionBackground
