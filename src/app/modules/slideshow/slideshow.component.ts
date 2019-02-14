@@ -42,6 +42,7 @@ export class SlideshowComponent implements OnInit, DoCheck {
   @Input() lazyLoad: boolean = false;
   @Input() hideOnNoSlides: boolean = false;
   @Input() fullscreen: boolean = false;
+  @Input() captionVPosition: string = "bottom";
 
   @Output() onSlideLeft = new EventEmitter<number>();
   @Output() onSlideRight = new EventEmitter<number>();
