@@ -135,6 +135,13 @@ $border-color: darken(#FFF, 5%);
   }
 
   .caption {
+    bottom: 0;
+    position: absolute;
+    padding: 10px;
+    width: 100%;
+  }
+  .captiontop {
+    top: 0;
     position: absolute;
     padding: 10px;
     width: 100%;
